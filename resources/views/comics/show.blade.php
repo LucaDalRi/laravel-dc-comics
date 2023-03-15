@@ -7,6 +7,12 @@
                 <h1 class="text-center">
                     {{ $comic->title }}
                 </h1>
+                <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Modifica fumetto</a>
+                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger" type="submit">Elimina</button>
+                </form>
             </div>
         </div>
         <div class="row">
