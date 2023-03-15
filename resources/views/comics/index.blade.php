@@ -7,6 +7,7 @@
                 <h1 class="card-title text-center my-4">
                     Tutti i fumetti:
                 </h1>
+                <p><a href="{{ route('comics.create') }}" class="btn btn-primary">Crea nuovo fumetto</a></p>
             </div>
         </div>
         <div class="row g-3"> 
